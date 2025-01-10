@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root {
+  margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 32px;
+}
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 8px;
+  height: 90%;
+}
+.addtodo-container{
+  border: 1px solid;
+  border-radius: 22px;
+  background-color: #a8bbdb;
+  margin: 12px;
+  padding: 13px;
+  max-width: 400px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 23px;
+  margin-top: 16px;
+}
+.button {
+  padding: 3px;
+  background-color: #6f6f87;
+  color: white;
+  cursor: pointer;
+  height: 23px;
+  font-size: 11px;
+  margin: 20px ;
+  border: none;
+  padding: 3px;
+  border-radius: 4px;
+}
+.button:hover{
+  color: #02091e;
+}
+
+.addtask-button{
+  font-size: 20px;
+  border: none;
+  color:#43563f;
+  /* background: transparent; */
+  height: 90px;
+  width: 100px;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-size: small;
+  padding: 8px 16px;
+  margin: 8px;
+  box-shadow: 0px 8px 9px hsla(147, 82%, 35%, 0.63);
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+  height: 44%;
+}
+
+
+.card .card-title {
+  margin: 0;
+}
+
+.card .card-desc {
+  margin: 0;
+  margin-top: 16px;
+  color: rgb(5, 38, 30);
+}
+
+.container input {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #99c89e;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0px 7px 9px hsla(128, 13%, 22%, 0.63);
+  border-radius: 3px;
+  padding: 16px;
+  height: 170px;
+}
+
+.container button {
+  padding: 3px;
+  background-color: #0e2c16;
+  color: white;
+  cursor: pointer;
+  height: 23px;
+  font-size: 11px;
+  margin: 0;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  margin: 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+
+
+
+
+  button {
+    margin: 0;
+    width: 60px;
+    height: 30px;
+  }
+ 
+
+  .save {
+    background-color: #1b6c0d;
+  }
+
+  .cancel {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .delete {
+    background-color: rgb(147, 16, 16);
+  }
+}
+
+.no-todo{
+  color: rgb(17, 56, 36);
+  opacity: 50%;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+top: 3;
+right: 5;
+height: 15px;
+border: 2px solid #000;
+}
+
+.task-complete {
+  text-decoration: line-through;
+  color: gray;
+}
+.login-head{
+  text-align: center;
+  font-size: small;
+}
+
+.login-box{
+  max-width: 400px;
+  background-color: #637dcb;
+  margin: 12px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0px 7px 9px hsla(232, 51%, 19%, 0.63);
+}
+.name{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  color: #000;
+}
+.password{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  color: #000;
+}
+button {
+  margin: 0;
+  width: 60px;
+  height: 30px;
+}
+.email{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  color: #000;
+}
+.mobile{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  color: #000;
+}
+.register-head{
+  text-align: center;
+  font-size: small;
+}
+
+.register-box{
+  max-width: 400px;
+  background-color: #637dcb;
+  margin: 12px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0px 7px 9px hsla(232, 51%, 19%, 0.63);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  width: 80px;
+  display: inline-block;
+}
